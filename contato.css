@@ -1,0 +1,134 @@
+header .banner {
+    background:url(arquivos/contatoheader.jpg) no-repeat center  / 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.catalogo_title h3::after{
+    border-bottom: solid #fc3856;
+}
+
+.text_paragrafo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.text_paragrafo p {
+    max-width: 530px;
+    text-align: center;
+    font-size: clamp(0.8em,0.4em + 0.4em,0.5vw);
+    padding: 10px;
+}
+
+form {
+    padding: 30px;
+    margin: 0 auto;
+    /*width: 60%;*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+.form_area{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form_area div {
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.form_area div input {
+    width: 260px;
+    height: 40px;
+    border: solid 1px #b1b0b083;
+    border-radius: 10px;
+    background-color: rgba(247, 242, 235, 0.719);
+    padding: 0px 20px;
+}
+
+.form_area div input::placeholder, .form_area textarea::placeholder {
+    color: #cccccc;
+}
+.form_area textarea {
+    border: solid 1px #b1b0b083;
+    background-color: rgba(247, 242, 235, 0.719);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(180deg,#fe7467, #fc3856);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 40px;
+    
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+@media (max-width:990px){
+    .banner_container_text img {
+        display: flex;
+     }
+}
+
+@media (max-width:990px){
+    .banner_container_text {
+        min-height:calc(100vh - 100px);
+    }
+ 
+    .banner_container_text img {
+        display: flex;
+        height: 120px;
+        width: 300px;
+        margin-bottom: 140px;
+     }
+
+}
+
+@media (max-width:590px){
+
+    header .banner {
+        background:url(arquivos/contatoheader_mobile.jpg) no-repeat center  / 100% 100%;
+    }
+
+    .form_area{
+        justify-content: center;
+    }
+    .form_area div {
+        gap: 30px;
+    }
+    .form_area textarea {
+       width: 260px;
+    }
+
+    form button {
+        width: 260px;
+        margin: 0 auto;
+        margin-top: 8%;
+        
+    }
+}
+
+@media (max-width:530px){
+    .banner_container_text{
+        min-height: calc(100vh - 200px);
+    }
+    .banner_container_text img {
+        max-width: 250px;
+        left: 10px;
+    }
+
+}
+
+

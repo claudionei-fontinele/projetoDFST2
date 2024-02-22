@@ -1,0 +1,106 @@
+header .banner {
+    background:url(arquivos/captainmarvelheader.jpg) no-repeat center  / 100% 100%;
+}
+
+.banner_container_text {
+    justify-content: center;
+    height: calc(100vh - 200px);
+    width: 100%;
+    position: relative;
+}
+
+.banner_container_text img {
+    width: 530px;
+    height: 250px;
+    position: absolute;
+    left: 8%;
+}
+
+@media (max-width:700px) {
+    .banner_container_text img {
+        max-width: 280px;
+        max-height: 180px;
+        left:8%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width:1200px) {
+    header .banner {
+        background:url(arquivos/captainmarvelheader_Mobile.jpg) no-repeat center  / 100% 100%;
+    }
+    .banner_container_text img {
+       display: none;
+    }
+}
+
+.container_catalogo{
+   justify-content: space-evenly ;
+   flex-wrap: wrap;
+   gap: 65px;
+   padding: 0px 10px 40px 10px;
+   
+}
+.card{
+    max-width: 390px;
+    transition: all 0.3s;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: solid 2px #ffffff;
+}
+
+@media (min-width:500px) {
+    .card:hover {
+        border-radius: 20px;
+        border: solid 2px #50505046;
+        box-shadow: 2px 4px 16px #3030308e;
+    }
+}
+
+.card img {
+    max-width: 390px;
+    height: 300px;
+}
+.card a {
+   margin-top: 10px;
+}
+
+.card h4 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+@media (max-width:1013px) {
+    .card{
+        max-width: 290px;
+       
+    }
+    .card img {
+        width: 290px;
+    }
+
+}
+
+@media (max-width:680px) {
+    .card{
+        max-width: 240px;
+       
+    }
+    .card img {
+        width: 240px;
+    }
+
+}
+
+@media (max-width:509px) {
+    .card{
+        max-width: 170px;
+       
+    }
+    .card img {
+        width: 170px;
+    }
+
+}
